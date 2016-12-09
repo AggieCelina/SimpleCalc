@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="aggiecelina.simplecalc.MainActivity">
+
+    <!--
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3">
+
+            <Button
+                android:id="@+id/button_1"
+                style="@style/ButtonTheme"
+                android:background="@color/colorPrimary"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/button_2"
+                style="@style/ButtonTheme"
+                android:background="@color/colorPrimary"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/button_3"
+                style="@style/ButtonTheme"
+                android:background="@color/colorPrimary"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/button_4"
+                style="@style/ButtonTheme"
+                android:background="@color/colorPrimary"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/button_5"
+                style="@style/ButtonTheme"
+                android:background="@color/colorPrimary"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/button_6"
+                style="@style/ButtonTheme"
+                android:background="@color/colorPrimary"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/button_7"
+                style="@style/ButtonTheme"
+                android:background="@color/colorPrimary"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/button_8"
+                style="@style/ButtonTheme"
+                android:background="@color/colorPrimary"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/button_9"
+                style="@style/ButtonTheme"
+                android:background="@color/colorPrimary"
+                android:text="9" />
+
+        </GridLayout>
+    -->
+
+
+    <TextView
+        android:id="@+id/resultValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif-light"
+        android:text="0.0"
+        android:textSize="50sp" />
+
+    <EditText
+        android:id="@+id/inputNb"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter number here"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/buttonMulti"
+            style="@style/ButtonTheme"
+            android:background="@color/colorPrimaryDark"
+            android:text="x" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_div"
+                style="@style/ButtonTheme"
+                android:background="@color/colorPrimaryDark"
+                android:text="/" />
+
+            <Button
+                android:id="@+id/buttonClear"
+                style="@style/ButtonTheme"
+                android:background="@color/colorAccent"
+                android:text="C" />
+
+
+            <Button
+                android:id="@+id/buttonSub"
+                style="@style/ButtonTheme"
+                android:background="@color/colorPrimaryDark"
+                android:text="-" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonAdd"
+            style="@style/ButtonTheme"
+            android:background="@color/colorPrimaryDark"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/buttonEq"
+            style="@style/ButtonTheme"
+            android:background="@color/colorPrimaryDark"
+            android:text="=" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
